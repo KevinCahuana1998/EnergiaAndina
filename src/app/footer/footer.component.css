@@ -6,24 +6,30 @@ h3{
 li{
     list-style-type: none;
 }
-.main-container{
+.footer{
     height: 450px;
+    padding-top: 30px;
+}
+.main-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-footer{
-    font-size: 0.85714em;
     background-color: #252422;
-    align-items: center;
-}
-.footer{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
 }
 .footer1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
+}
+.footer2{
+    max-width: 235px;
+    width: 24.668425681618%;
+    margin-right: 0.5408970976%;
+    
 }
 .footer2 label{
     margin: 0 0 10px 0;
@@ -33,9 +39,12 @@ li{
     color: aliceblue;
     font-weight: 500;
 }
+.footer2 div{
+    width: 230px;
+}
 .sociales{
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .sociales a{
     font-size: 40px;
@@ -44,7 +53,6 @@ li{
     width: 58px;
     border-radius: 50%;
     box-shadow: 1px 1px 7px -1px #FFF;
-    font-size: 4x;
 }
 .sociles1{
     display: flex;
@@ -85,4 +93,54 @@ li{
 .copi-rigth{
     text-align: center;
     color: aliceblue;
+}
+@media only screen and (max-width: 962px) {
+    /* Features */
+    .footer{
+        height: 750px;
+    }
+    .footer2{
+        width: 99.8055925433%;
+    }
+    .footer1 :nth-child(3n) {
+        margin-right: 0.5408970976%;
+    }
+    .footer1 :nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 512px){
+    .footer{
+        height: 1300px;
+    }
+    .footer1{
+        flex-direction: column;
+    }
+    .footer1 :nth-child(1){
+        margin-right: 0px;
+    }
+    .footer1 :nth-child(3){
+        margin-right: 0px;
+    }
+    .sociales div div{
+        width: 45px;
+        height: 45px;
+    }
+    .sociales{
+    padding-top: 5px;
+    padding-bottom: 15px; 
+    }
+    .sociles1 i{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+    .sociles1 div:not(:nth-child(4)){
+        margin-right: 40px;
+    }
+    .sociles1 div a{
+        margin-left: 5.5px;
+        
+        padding-bottom: 20px;
+    }
+
 }
